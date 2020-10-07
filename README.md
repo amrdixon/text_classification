@@ -1,8 +1,14 @@
-##
+## Text Classification
 
-This work shows an early attempt to address a key stakeholder issue which is the classification of products from product descriptions. The IPython notebook shows an early attempt to address this challenge. Included in this work is data analysis, discussion of performance metrics, implementation of a simple text classifier and some classifier parameter tuning. This work is an early version of how an overall project might look, so we included several recommendations for future work.
+This work shows an early attempt to address a key stakeholder issue which is the classification of products from product descriptions. The Jupyter notebook shows an early attempt to address this challenge. This repo is organized as follows:
 
-The report and analysis are both included in the IPython notebook. Users should be able to see all work done by simply opening the notebook. However, if users wish to analyze and expand upon the work, the instructions below detail how to recreate the same Python environment in MacOS.
+- initial_data_analysis.pynb - Exploratory data analysis and discussion of performance metrics
+- text_classification_bayes.ipynb - Bayes classifier model for product category level 1 and 2, including parameter tuning
+- test_classification_nn - Deep learning model for product category level 1
+
+This work is an early version of how an overall project might look, so we included several recommendations for future work.
+
+Users should be able to see all work done by simply opening the notebook in GitHub. However, if users wish to analyze and expand upon the work, the instructions below detail how to recreate the same Python environment in MacOS.
 
 ## Setting up a virtual environment (MacOS)
 
@@ -27,15 +33,15 @@ Once inside your virtual environment, you will install the dependencies:
 
 	pip3 install -r requirements.txt
 	
-Create a new kernel for the Jupyter Notebook:
+Create a new kernel for the Jupyter Notebook (feel free to replace "kernel1" with a name of your choosing):
 
-	ipython kernel install --user --name=censusbureau
+	ipython kernel install --user --name=kernel1
 	
 Start Jupyter Notebook and select your notebook to run.
 
 	jupyter notebook
 
-Once inside Jupyter, select kernel > Change kernel > censusbureau to use the virtualenv you'e created.
+Once inside Jupyter, select kernel > Change kernel > kernel1 to use the virtualenv you've created.
 
 	
 	
